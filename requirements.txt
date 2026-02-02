@@ -1,0 +1,9 @@
+torch
+transformers
+fastapi
+uvicorn[standard]
+pydub
+librosa
+scikit-learn
+soundfile
+numpy
