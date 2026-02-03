@@ -14,4 +14,6 @@ RUN pip install --no-cache-dir torch==2.0.0+cpu torchvision==0.15.0+cpu --index-
     pip install --no-cache-dir transformers fastapi uvicorn[standard] pydub librosa scikit-learn soundfile numpy
 
 EXPOSE 8000
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]
+
+# CORRECT (Railway auto-sets $PORT)
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port $PORT"]
