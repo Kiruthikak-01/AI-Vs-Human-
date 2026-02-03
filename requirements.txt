@@ -1,9 +1,10 @@
-torch
-transformers
-fastapi
-uvicorn[standard]
-pydub
-librosa
-scikit-learn
-soundfile
-numpy
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+torch==2.0.0+cpu torchvision==0.15.0+cpu --index-url https://download.pytorch.org/whl/cpu
+transformers==4.44.0
+pydub==0.25.1
+librosa==0.10.1
+soundfile==0.12.1
+numpy==1.26.4
+python-multipart==0.0.9
+ffmpeg-python==0.2.0
